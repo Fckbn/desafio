@@ -1,0 +1,349 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+    body {
+        min-height: 100vh;
+        box-sizing: border-box;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topo {
+        padding: 1rem;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid whitesmoke;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .topo-img{ 
+        display: flex;
+        height: 50px;
+        width: auto;
+    }
+
+    .topo-menu {
+        display: flex;
+        gap: 40px;
+        font-size: x-large;
+        justify-content: center;
+        flex: 2;
+        color: blue;
+    }
+
+        .topo-menu a{
+            text-decoration: none;
+        }
+
+    .principal{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: auto;
+        text-align: center;
+        overflow-y: auto;
+    }
+
+    .lancamentos-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .img--principal {
+        width: 100%;
+        max-width: 1500px;
+        border-radius: 2rem;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+    }
+
+    .hero-lancamento {
+        width: 100%;
+        max-width: 1200px;
+        overflow: hidden;
+        border-radius: 1.5rem;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+    }
+
+    .hero-lancamento img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .cards-lancamento {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .car-card {
+        flex: 1 1 280px;
+        min-width: 260px;
+        max-width: 360px;
+        background-color: #fff;
+        border: 1px solid #dde7f2;
+        border-radius: 1.25rem;
+        padding: 1rem;
+        box-shadow: 0 18px 40px rgba(3, 42, 80, 0.06);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .car-card.selected {
+        border-color: blue;
+        box-shadow: 0 22px 46px rgba(0, 64, 191, 0.12);
+    }
+
+    .car-card > img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .car-card-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        text-align: left;
+    }
+
+    .car-card-title-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+    }
+
+    .info-icon {
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+        cursor: pointer;
+    }
+
+    .car-card-title {
+        font-size: 1.05rem;
+        font-weight: bold;
+        color: #102a53;
+    }
+
+    .car-card p {
+        color: #556a85;
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .car-card-action {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.95rem;
+        color: #0b3a79;
+        cursor: pointer;
+    }
+
+    .car-card-action input {
+        width: 18px;
+        height: 18px;
+        accent-color: blue;
+    }
+
+    .btn-comparar {
+        padding: 0.95rem 2rem;
+        border: none;
+        border-radius: 999px;
+        background-color: blue;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    .btn-comparar:hover {
+        background-color: #003f9f;
+    }
+
+    .rodape {
+        color: white;
+        background-color: blue;
+        text-align: initial;
+        display: flex;
+        align-items: center;
+        padding: 1px 20px;
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+    .logo--rodape {
+        box-sizing: border-box;
+        margin-left: auto;
+    }
+
+    .contato-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        padding: 2rem 1rem;
+    }
+
+    .contato-imagem {
+        flex: 1 1 320px;
+        max-width: 520px;
+    }
+
+    .contato-imagem img {
+        width: 100%;
+        height: auto;
+        border-radius: 24px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+    }
+
+    .contato-card {
+        flex: 1 1 320px;
+        max-width: 420px;
+        background-color: #f4f8ff;
+        padding: 2rem;
+        border-radius: 24px;
+        box-shadow: 0 18px 40px rgba(3, 42, 80, 0.08);
+        text-align: left;
+    }
+
+    .contato-card h2 {
+        margin-bottom: 1.5rem;
+        color: #0b3a79;
+        font-size: 1.8rem;
+    }
+
+    .contato-form {
+        display: grid;
+        gap: 1rem;
+    }
+
+    .contato-field {
+        display: grid;
+        gap: 0.4rem;
+        font-size: 0.95rem;
+        color: #33475b;
+    }
+
+    .contato-field input,
+    .contato-field select {
+        width: 100%;
+        padding: 0.95rem 1rem;
+        border: 1px solid #d8e2f0;
+        border-radius: 14px;
+        background-color: white;
+        font-size: 0.95rem;
+        outline: none;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .contato-field input:hover,
+    .contato-field select:hover,
+    .contato-field input:focus,
+    .contato-field select:focus {
+        border-color: #84aaf9;
+        box-shadow: 0 0 0 4px rgba(132, 170, 249, 0.12);
+    }
+
+    .contato-form button {
+        margin-top: 0.5rem;
+        padding: 1rem 1.2rem;
+        border: none;
+        border-radius: 14px;
+        background-color: blue;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    .contato-form button:hover {
+        background-color: #003f9f;
+    }
+
+    .video-lancamento {
+        background-color: black;
+        height: auto;
+        width: 100%;
+        max-width: 1200px;
+        border-radius: 1rem;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+    }
+
+    @media (max-width: 860px) {
+        .topo {
+            justify-content: center;
+        }
+
+        .topo-menu {
+            flex: 1 1 100%;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            font-size: 1rem;
+        }
+
+        .topo-menu a {
+            padding: 0.5rem 0;
+        }
+
+        .contato-container,
+        .cards-lancamento {
+            flex-direction: column;
+            padding: 1rem;
+            align-items: stretch;
+        }
+
+        .contato-imagem,
+        .contato-card,
+        .car-card {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .car-card {
+            min-width: auto;
+        }
+
+        .hero-lancamento,
+        .video-lancamento {
+            max-width: 100%;
+        }
+
+        .rodape {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            gap: 0.75rem;
+        }
+
+        .logo--rodape {
+            margin-left: 0;
+        }
+    }
